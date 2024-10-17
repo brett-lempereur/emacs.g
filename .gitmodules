@@ -1,0 +1,18 @@
+[submodule "borg"]
+	path = user-package/borg
+	url = git@github.com:emacscollective/borg.git
+[submodule "closql"]
+	path = user-package/closql
+	url = git@github.com:emacscollective/closql.git
+[submodule "emacsql"]
+	path = user-package/emacsql
+	url = git@github.com:skeeto/emacsql.git
+[submodule "compat"]
+	path = user-package/compat
+	url = git@github.com:emacs-compat/compat.git
+[submodule "llama"]
+	path = user-package/llama
+	url = git@github.com:tarsius/llama
+[submodule "epkg"]
+	path = user-package/epkg
+	url = git@github.com:emacscollective/epkg.git

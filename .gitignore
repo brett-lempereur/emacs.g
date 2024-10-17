@@ -1,0 +1,18 @@
+###
+### .gitignore
+###
+
+# Allowlist machine-specific configurations
+user-machine/
+
+# Remote packages and temporary scripts
+/local
+
+# Compiled libraries
+/eln-cache
+
+# Session files created when emacs is closed by the window manager
+/.session.*
+
+# Tags
+/TAGS
