@@ -7,11 +7,18 @@
 # Configuration
 DRONES_DIR := user-package
 BORG_CLEAN_ELN := true
-INIT_FILES := early-init.el init.el $(wildcard user-lisp/*.el) \
-			  $(wildcard user-machine/*.el)
+INIT_FILES := early-init.el init.el \
+	$(wildcard user-lisp/*.el) \
+	$(wildcard user-lisp/user-language/*.el) \
+	$(wildcard user-machine/*.el)
+
+# Relocate natively compiled libraries
+EMACS_EXTRA += --eval "(when (boundp 'native-comp-eln-load-path)\
+                         (startup-redirect-eln-cache \
+                           (locate-user-emacs-file \"local/eln-cache\")))"
 
 # Include the main makefile.
-include $(DRONES_DIR)/borg/borg.mk
+-include $(DRONES_DIR)/borg/borg.mk
 
 ##
 ## Bootstrap
@@ -28,4 +35,4 @@ bootstrap-borg:
 ##
 
 clean-all: clean
-	@rm -rf eln-cache local auto-save-list
+	@rm -rf eln-cache local auto-save-list projectile-bookmarks.eld

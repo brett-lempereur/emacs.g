@@ -1,0 +1,6 @@
+* %^{Title}
+:PROPERTIES:
+:ATTENDEES: Brett
+:END:
+
+%?

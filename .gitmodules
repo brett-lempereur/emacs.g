@@ -1,18 +1,352 @@
+[submodule "ace-window"]
+    path = user-package/ace-window
+    url = https://github.com/abo-abo/ace-window
+    ignore = dirty
+[submodule "ag"]
+	path = user-package/ag
+	url = https://github.com/Wilfred/ag.el
+	ignore = dirty
+[submodule "aggressive-indent"]
+    path = user-package/aggressive-indent
+    url = https://github.com/Malabarba/aggressive-indent-mode
+    ignore = dirty
+[submodule "aio"]
+	path = user-package/aio
+	url = https://github.com/skeeto/emacs-aio
+	ignore = dirty
+[submodule "avy"]
+    path = user-package/avy
+    url = https://github.com/abo-abo/avy
+    ignore = dirty
 [submodule "borg"]
-	path = user-package/borg
-	url = git@github.com:emacscollective/borg.git
+    path = user-package/borg
+    url = git@github.com:emacscollective/borg.git
+    ignore = dirty
+[submodule "buttercup"]
+    path = user-package/buttercup
+    url = https://github.com/jorgenschaefer/emacs-buttercup
+    ignore = dirty
+[submodule "caml"]
+	path = user-package/caml
+	url = https://github.com/ocaml/caml-mode
+	ignore = dirty
+[submodule "cargo"]
+	path = user-package/cargo
+	url = https://github.com/kwrooijen/cargo.el
+    ignore = dirty
 [submodule "closql"]
-	path = user-package/closql
-	url = git@github.com:emacscollective/closql.git
-[submodule "emacsql"]
-	path = user-package/emacsql
-	url = git@github.com:skeeto/emacsql.git
+    path = user-package/closql
+    url = git@github.com:emacscollective/closql.git
+    ignore = dirty
 [submodule "compat"]
-	path = user-package/compat
-	url = git@github.com:emacs-compat/compat.git
-[submodule "llama"]
-	path = user-package/llama
-	url = git@github.com:tarsius/llama
+    path = user-package/compat
+    url = git@github.com:emacs-compat/compat.git
+    ignore = dirty
+[submodule "consult"]
+    path = user-package/consult
+    url = https://github.com/minad/consult
+    ignore = dirty
+[submodule "consult-eglot"]
+	path = user-package/consult-eglot
+	url = https://github.com/mohkale/consult-eglot
+    ignore = dirty
+[submodule "corfu"]
+    path = user-package/corfu
+    url = https://github.com/minad/corfu
+    ignore = dirty
+[submodule "crux"]
+    path = user-package/crux
+    url = https://github.com/bbatsov/crux
+    ignore = dirty
+[submodule "dape"]
+	path = user-package/dape
+	url = https://github.com/svaante/dape
+	ignore = dirty
+[submodule "dash"]
+    path = user-package/dash
+    url = https://github.com/magnars/dash.el
+    ignore = dirty
+[submodule "diff-hl"]
+    path = user-package/diff-hl
+    url = https://github.com/dgutov/diff-hl
+    ignore = dirty
+[submodule "diminish"]
+	path = user-package/diminish
+	url = https://github.com/myrjola/diminish.el
+    ignore = dirty
+[submodule "docker"]
+	path = user-package/docker
+	url = https://github.com/Silex/docker.el
+	ignore = dirty
+[submodule "dockerfile-mode"]
+	path = user-package/dockerfile-mode
+	url = https://github.com/spotify/dockerfile-mode
+	ignore = dirty
+[submodule "dune"]
+	path = user-package/dune
+	url = git@github.com:emacsmirror/dune.git
+	ignore = dirty
+[submodule "edit-indirect"]
+	path = user-package/edit-indirect
+	url = https://github.com/Fanael/edit-indirect
+    ignore = dirty
+[submodule "ef-themes"]
+	path = user-package/ef-themes
+	url = https://git.sr.ht/~protesilaos/ef-themes
+    ignore = dirty
+[submodule "elisp-refs"]
+    path = user-package/elisp-refs
+    url = https://github.com/Wilfred/elisp-refs
+    ignore = dirty
+[submodule "emacsql"]
+    path = user-package/emacsql
+    url = git@github.com:skeeto/emacsql.git
+    ignore = dirty
+[submodule "embark"]
+    path = user-package/embark
+    url = https://github.com/oantolin/embark
+    ignore = dirty
 [submodule "epkg"]
-	path = user-package/epkg
-	url = git@github.com:emacscollective/epkg.git
+    path = user-package/epkg
+    url = git@github.com:emacscollective/epkg.git
+    ignore = dirty
+[submodule "eros"]
+    path = user-package/eros
+    url = https://github.com/xiongtx/eros
+    ignore = dirty
+[submodule "exec-path-from-shell"]
+	path = user-package/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell
+    ignore = dirty
+[submodule "f"]
+    path = user-package/f
+    url = https://github.com/rejeep/f.el
+    ignore = dirty
+[submodule "flx"]
+    path = user-package/flx
+    url = https://github.com/lewang/flx
+    ignore = dirty
+[submodule "flycheck"]
+    path = user-package/flycheck
+    url = https://github.com/flycheck/flycheck
+    ignore = dirty
+[submodule "git-modes"]
+	path = user-package/git-modes
+	url = https://github.com/magit/git-modes
+	ignore = dirty
+[submodule "haskell-mode"]
+	path = user-package/haskell-mode
+	url = https://github.com/haskell/haskell-mode
+    ignore = dirty
+[submodule "helpful"]
+    path = user-package/helpful
+    url = https://github.com/Wilfred/helpful
+    ignore = dirty
+[submodule "hl-todo"]
+    path = user-package/hl-todo
+    url = https://github.com/tarsius/hl-todo
+    ignore = dirty
+[submodule "hungry-delete"]
+    path = user-package/hungry-delete
+    url = https://github.com/nflath/hungry-delete
+    ignore = dirty
+[submodule "hyperspec"]
+	path = user-package/hyperspec
+	url = https://github.com/emacsorphanage/hyperspec
+    ignore = dirty
+[submodule "idle-highlight-mode"]
+    path = user-package/idle-highlight-mode
+    url = https://codeberg.org/ideasman42/emacs-idle-highlight-mode
+    ignore = dirty
+[submodule "ido-completing-read+"]
+    path = user-package/ido-completing-read+
+    url = https://github.com/DarwinAwardWinner/ido-completing-read-plus
+    ignore = dirty
+[submodule "json-mode"]
+	path = user-package/json-mode
+	url = https://github.com/json-emacs/json-mode
+    ignore = dirty
+[submodule "json-snatcher"]
+	path = user-package/json-snatcher
+	url = https://github.com/Sterlingg/json-snatcher
+    ignore = dirty
+[submodule "kind-icon"]
+	path = user-package/kind-icon
+	url = https://github.com/jdtsmith/kind-icon
+	ignore = dirty
+[submodule "know-your-http-well"]
+	path = user-package/know-your-http-well
+	url = https://github.com/for-GET/know-your-http-well
+    ignore = dirty
+[submodule "llama"]
+    path = user-package/llama
+    url = git@github.com:tarsius/llama
+    ignore = dirty
+[submodule "macrostep"]
+	path = user-package/macrostep
+	url = https://github.com/emacsorphanage/macrostep
+    ignore = dirty
+[submodule "magit"]
+    path = user-package/magit
+    url = https://github.com/magit/magit
+    ignore = dirty
+[submodule "marginalia"]
+    path = user-package/marginalia
+    url = https://github.com/minad/marginalia
+    ignore = dirty
+[submodule "markdown-mode"]
+	path = user-package/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode
+    ignore = dirty
+[submodule "memoize"]
+    path = user-package/memoize
+    url = https://github.com/skeeto/emacs-memoize
+    ignore = dirty
+[submodule "merlin"]
+	path = user-package/merlin
+	url = https://github.com/emacsmirror/merlin
+	ignore = dirty
+[submodule "no-littering"]
+    path = user-package/no-littering
+    url = https://github.com/emacscollective/no-littering
+    ignore = dirty
+[submodule "orderless"]
+    path = user-package/orderless
+    url = https://github.com/oantolin/orderless
+    ignore = dirty
+[submodule "pos-tip"]
+	path = user-package/pos-tip
+	url = https://github.com/pitkali/pos-tip
+    ignore = dirty
+[submodule "posframe"]
+    path = user-package/posframe
+    url = https://github.com/tumashu/posframe
+    ignore = dirty
+[submodule "powerline"]
+    path = user-package/powerline
+    url = https://github.com/milkypostman/powerline
+    ignore = dirty
+[submodule "projectile"]
+    path = user-package/projectile
+    url = https://github.com/bbatsov/projectile
+    ignore = dirty
+[submodule "python-black"]
+	path = user-package/python-black
+	url = https://github.com/wbolster/emacs-python-black
+    ignore = dirty
+[submodule "pyvenv"]
+	path = user-package/pyvenv
+	url = https://github.com/jorgenschaefer/pyvenv
+    ignore = dirty
+[submodule "queue"]
+    path = user-package/queue
+    url = git@github.com:emacsmirror/queue.git
+    ignore = dirty
+[submodule "racket-mode"]
+	path = user-package/racket-mode
+	url = https://github.com/greghendershott/racket-mode
+    ignore = dirty
+[submodule "rainbow-delimiters"]
+    path = user-package/rainbow-delimiters
+    url = https://github.com/Fanael/rainbow-delimiters
+    ignore = dirty
+[submodule "ranger"]
+	path = user-package/ranger
+	url = https://github.com/punassuming/ranger.el
+    ignore = dirty
+[submodule "reformatter"]
+	path = user-package/reformatter
+	url = https://github.com/purcell/emacs-reformatter
+    ignore = dirty
+[submodule "restclient"]
+	path = user-package/restclient
+	url = https://github.com/pashky/restclient.el
+    ignore = dirty
+[submodule "ruff-format"]
+	path = user-package/ruff-format
+	url = https://github.com/scop/emacs-ruff-format
+    ignore = dirty
+[submodule "rust-mode"]
+	path = user-package/rust-mode
+	url = https://github.com/rust-lang/rust-mode
+    ignore = dirty
+[submodule "s"]
+    path = user-package/s
+    url = https://github.com/magnars/s.el
+    ignore = dirty
+[submodule "scribble-mode"]
+	path = user-package/scribble-mode
+	url = https://github.com/emacs-pe/scribble-mode
+    ignore = dirty
+[submodule "slime"]
+	path = user-package/slime
+	url = https://github.com/slime/slime
+    ignore = dirty
+[submodule "smartparens"]
+    path = user-package/smartparens
+    url = https://github.com/Fuco1/smartparens
+    ignore = dirty
+[submodule "smartrep"]
+    path = user-package/smartrep
+    url = https://github.com/myuhe/smartrep.el
+    ignore = dirty
+[submodule "spaceline"]
+    path = user-package/spaceline
+    url = https://github.com/TheBB/spaceline
+    ignore = dirty
+[submodule "svg-lib"]
+	path = user-package/svg-lib
+	url = https://github.com/rougier/svg-lib
+	ignore = dirty
+[submodule "tablist"]
+	path = user-package/tablist
+	url = https://github.com/emacsorphanage/tablist
+	ignore = dirty
+[submodule "toml-mode"]
+	path = user-package/toml-mode
+	url = https://github.com/dryman/toml-mode.el
+    ignore = dirty
+[submodule "transient"]
+    path = user-package/transient
+    url = https://github.com/magit/transient
+    ignore = dirty
+[submodule "tuareg"]
+	path = user-package/tuareg
+	url = https://github.com/ocaml/tuareg
+	ignore = dirty
+[submodule "undo-tree"]
+    path = user-package/undo-tree
+    url = https://gitlab.com/tsc25/undo-tree
+    ignore = dirty
+[submodule "utop"]
+	path = user-package/utop
+	url = git@github.com:emacsmirror/utop.git
+	ignore = dirty
+[submodule "vertico"]
+    path = user-package/vertico
+    url = https://github.com/minad/vertico
+    ignore = dirty
+[submodule "visual-fill-column"]
+    path = user-package/visual-fill-column
+    url = https://codeberg.org/joostkremers/visual-fill-column
+    ignore = dirty
+[submodule "winnow"]
+	path = user-package/winnow
+	url = https://github.com/dgtized/winnow.el
+	ignore = dirty
+[submodule "with-editor"]
+    path = user-package/with-editor
+    url = https://github.com/magit/with-editor
+    ignore = dirty
+[submodule "ws-butler"]
+    path = user-package/ws-butler
+    url = https://github.com/lewang/ws-butler
+    ignore = dirty
+[submodule "yaml-mode"]
+	path = user-package/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode
+    ignore = dirty
+[submodule "yasnippet"]
+    path = user-package/yasnippet
+    url = https://github.com/joaotavora/yasnippet
+    ignore = dirty
