@@ -3,16 +3,21 @@
 ###
 
 # Allowlist machine-specific configurations
-user-machine/
+user-machine/*.el
+!user-machine/user-machine-saito.el
 
 # Remote packages and temporary scripts
 /local
 
 # Compiled libraries
+*.elc
 /eln-cache
 
 # Session files created when emacs is closed by the window manager
 /.session.*
+
+# Bookmarks created by projectile while byte compiling configuration
+/projectile-bookmarks.eld
 
 # Tags
 /TAGS
