@@ -50,6 +50,10 @@
 	path = user-package/consult-eglot
 	url = https://github.com/mohkale/consult-eglot
     ignore = dirty
+[submodule "consult-xref-stack"]
+	path = user-package/consult-xref-stack
+	url = git@github.com:brett-lempereur/consult-xref-stack.git
+	ignore = dirty
 [submodule "corfu"]
     path = user-package/corfu
     url = https://github.com/minad/corfu

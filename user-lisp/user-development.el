@@ -13,6 +13,7 @@
 (require 'eldoc)
 (require 'project)
 (require 'smerge-mode)
+(require 'xref)
 
 (require 'use-package)
 

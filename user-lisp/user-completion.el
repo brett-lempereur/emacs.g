@@ -97,6 +97,11 @@
 (use-package consult-eglot
   :commands consult-eglot-symbols)
 
+;; Cross-reference stack navigation
+(use-package consult-xref-stack
+  :bind
+  (("C-," . consult-xref-stack-backward)))
+
 ;; Interactive guided keyboard command completion
 (use-package which-key
   :demand t
