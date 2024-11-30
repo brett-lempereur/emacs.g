@@ -16,12 +16,12 @@
 (use-package rust-mode
   :mode "\\.rs\\'"
   :bind
-  (("C-c C-c c" . rust-compile)
-   ("C-c C-c l" . rust-run-clippy)
-   ("C-c C-c t" . rust-test))
+  (:map rust-mode-map
+   ("C-c C-c C-c" . rust-compile)
+   ("C-c C-c C-l" . rust-run-clippy)
+   ("C-c C-c C-t" . rust-test))
   :hook
   ((rust-mode . cargo-minor-mode)
-   (rust-mode . smartparens-mode)
    (rust-mode . user-lsp-minor-modes)
    (rust-mode . user-programming-minor-modes))
   :custom

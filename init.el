@@ -27,6 +27,7 @@
 ;; Programming and markup languages
 (require 'user-language-common-lisp)
 (require 'user-language-emacs-lisp)
+(require 'user-language-go)
 (require 'user-language-haskell)
 (require 'user-language-json)
 (require 'user-language-markdown)

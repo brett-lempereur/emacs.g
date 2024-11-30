@@ -22,7 +22,6 @@
   (hungry-delete-mode)
   (idle-highlight-mode)
   (rainbow-delimiters-mode)
-  (smartparens-mode)
   ;; Configuration
   (setq-local comment-auto-fill-only-comments t))
 
