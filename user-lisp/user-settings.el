@@ -25,11 +25,11 @@
   "The amount of spacing between each line."
   :group 'user-settings
   :type '(number))
-(defcustom user-setting-theme-package 'ef-themes
+(defcustom user-setting-theme-package 'zenburn-theme
   "The package that contains the custom theme."
   :group 'user-settings
   :type '(choice (const :tag "None" nil) symbol))
-(defcustom user-setting-theme 'ef-melissa-light
+(defcustom user-setting-theme 'zenburn
   "The name of the custom theme."
   :group 'user-settings
   :type '(symbol))

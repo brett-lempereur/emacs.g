@@ -298,6 +298,10 @@
     path = user-package/smartrep
     url = https://github.com/myuhe/smartrep.el
     ignore = dirty
+[submodule "solarized-theme"]
+	path = user-package/solarized-theme
+	url = https://github.com/bbatsov/solarized-emacs
+	ignore = dirty
 [submodule "spaceline"]
     path = user-package/spaceline
     url = https://github.com/TheBB/spaceline
@@ -358,3 +362,7 @@
     path = user-package/yasnippet
     url = https://github.com/joaotavora/yasnippet
     ignore = dirty
+[submodule "zenburn-theme"]
+	path = user-package/zenburn-theme
+	url = https://github.com/bbatsov/zenburn-emacs
+	ignore = dirty
