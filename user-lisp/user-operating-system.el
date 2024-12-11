@@ -83,11 +83,12 @@
 ;; Docker management support
 (use-package docker
   :when (find-executable user-setting-docker-command)
-  :commands (docker docker-container docker-compose)
+  :commands (docker docker-compose)
   :bind
   ("C-c d d" . docker)
-  ("C-c d l" . docker-container)
+  ("C-c d l" . docker-containers)
   ("C-c d c" . docker-compose)
+  ("C-c d i" . docker-images)
   :custom
   (docker-command user-setting-docker-command)
   (docker-compose-command user-setting-docker-compose-command))

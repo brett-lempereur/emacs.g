@@ -23,7 +23,7 @@
   (corfu-auto t)
   (corfu-cycle t)
   (corfu-margin-formatters (list #'kind-icon-margin-formatter))
-  (corfu-max-width 30)
+  (corfu-max-width 80)
   (corfu-preview-current t)
   (corfu-preselect 'prompt)
   :config
@@ -100,7 +100,7 @@
 ;; Cross-reference stack navigation
 (use-package consult-xref-stack
   :bind
-  (("C-," . consult-xref-stack-backward)))
+  (("M-," . consult-xref-stack-backward)))
 
 ;; Interactive guided keyboard command completion
 (use-package which-key
