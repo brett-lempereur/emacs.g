@@ -36,7 +36,7 @@
 (defcustom user-setting-menu-bar-mode nil
   "Whether to display the menu bar."
   :group 'user-settings
-  :type '(boolean))
+  :type '(choice boolean number))
 (defcustom user-setting-cookie-file (locate-user-emacs-file "user-data/cookie")
   "The file that contains fortunes and aphorisms."
   :group 'user-settings
