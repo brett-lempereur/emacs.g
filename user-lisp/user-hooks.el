@@ -25,6 +25,11 @@
   ;; Configuration
   (setq-local comment-auto-fill-only-comments t))
 
+(defun user-space-indentation-modes ()
+  "Activates minor modes common to all space-indented languages."
+  ;; Minor modes
+  (highlight-indentation-mode))
+
 (defun user-lsp-minor-modes ()
   "Activates the language server protocol client and features."
   (eglot-ensure)

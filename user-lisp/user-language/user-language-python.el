@@ -34,6 +34,7 @@
 ;; Language hooks
 (add-hook 'python-mode-hook #'smartparens-mode)
 (add-hook 'python-mode-hook #'user-programming-minor-modes)
+(add-hook 'python-mode-hook #'user-space-indentation-modes)
 (add-hook 'python-mode-hook #'user-lsp-minor-modes)
 
 ;; Environment hooks

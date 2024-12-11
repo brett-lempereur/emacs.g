@@ -153,6 +153,9 @@
     path = user-package/helpful
     url = https://github.com/Wilfred/helpful
     ignore = dirty
+[submodule "highlight-indentation"]
+	path = user-package/highlight-indentation
+	url = https://github.com/antonj/Highlight-Indentation-for-Emacs
 [submodule "hl-todo"]
     path = user-package/hl-todo
     url = https://github.com/tarsius/hl-todo

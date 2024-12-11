@@ -222,6 +222,12 @@ projectile-tags-command
    (gitconfig-mode . user-markup-minor-modes)
    (gitignore-mode . user-markup-minor-modes)))
 
+;; Indentation highlighting
+(use-package highlight-indentation
+  :commands (highlight-indentation-mode)
+  :custom
+  (highlight-indentation-blank-lines t))
+
 ;; Highlight the current symbol when idle
 (use-package idle-highlight-mode
   :commands idle-highlight-mode
