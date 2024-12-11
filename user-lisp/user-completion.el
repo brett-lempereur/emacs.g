@@ -31,6 +31,14 @@
   (setopt corfu-popupinfo-delay 1.0)
   (corfu-popupinfo-mode))
 
+;; Completion at point extensions
+(use-package cape
+  :bind
+  ("C-c /" . cape-prefix-map)
+  :init
+  (add-hook 'completion-at-point-functions #'cape-dabbrev)
+  (add-hook 'completion-at-point-functions #'cape-file))
+
 ;; Text and programming language completion icon annotations
 (use-package kind-icon
   :after corfu

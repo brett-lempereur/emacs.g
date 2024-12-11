@@ -30,6 +30,9 @@
 	path = user-package/caml
 	url = https://github.com/ocaml/caml-mode
 	ignore = dirty
+[submodule "cape"]
+	path = user-package/cape
+	url = https://github.com/minad/cape
 [submodule "cargo"]
 	path = user-package/cargo
 	url = https://github.com/kwrooijen/cargo.el
