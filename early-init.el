@@ -38,14 +38,14 @@
 ;; Disable built-in package management
 (setopt package-enable-at-startup nil)
 
+;; Initialise the collective
+(require 'borg)
+(borg-initialize)
+
 ;; Keep the configuration directory clean
 (setopt no-littering-etc-directory (locate-user-emacs-file "local/config/"))
 (setopt no-littering-var-directory (locate-user-emacs-file "local/data/"))
 (require 'no-littering)
-
-;; Initialise the collective
-(require 'borg)
-(borg-initialize)
 
 (provide 'early-init)
 ;; early-init.el ends here

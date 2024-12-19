@@ -352,6 +352,10 @@
     path = user-package/visual-fill-column
     url = https://codeberg.org/joostkremers/visual-fill-column
     ignore = dirty
+[submodule "which-key"]
+	path = user-package/which-key
+	url = git@github.com:justbur/emacs-which-key.git
+	ignore = dirty
 [submodule "winnow"]
 	path = user-package/winnow
 	url = https://github.com/dgtized/winnow.el
