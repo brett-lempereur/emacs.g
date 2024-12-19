@@ -14,8 +14,7 @@
 (defun user-open-shell ()
   "Open a new shell terminal."
   (interactive)
-  (let ((shell (getenv "SHELL")))
-    (if shell (ansi-term shell) (ansi-term))))
+  (eshell t))
 
 (defun user-switch-to-or-open-shell ()
   "Switch to an existing shell terminal or open a new terminal."
@@ -24,7 +23,7 @@
                   (sort
                    (seq-filter
                     (lambda (buf)
-                      (string-prefix-p "*ansi-term" (buffer-name buf)))
+                      (string-prefix-p "*eshell" (buffer-name buf)))
                     (buffer-list)))))
          (window (get-buffer-window buffer)))
     (cond
@@ -48,7 +47,8 @@
 (advice-add 'term-handle-exit :after #'user-handle-terminal-exit)
 
 ;; Additional minor modes for terminal mode
-(add-hook 'term-mode-hook #'compilation-shell-minor-mode)
+(add-hook 'eshell-mode-hook #'corfu-mode)
+(add-hook 'eshell-mode-hook #'compilation-shell-minor-mode)
 
 ;; Optionally load environment variables from the shell
 (use-package exec-path-from-shell
@@ -92,6 +92,14 @@
   :custom
   (docker-command user-setting-docker-command)
   (docker-compose-command user-setting-docker-compose-command))
+
+;; Better shell prompt
+(use-package eshell-prompt-extras
+  :custom
+  (eshell-highlight-prompt nil)
+  (eshell-prompt-function 'epe-theme-lambda)
+  :config
+  (autoload 'epe-theme-lambda "eshell-prompt-extras"))
 
 (provide 'user-operating-system)
 ;;; user-operating-system.el ends here

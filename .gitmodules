@@ -121,6 +121,10 @@
     path = user-package/eros
     url = https://github.com/xiongtx/eros
     ignore = dirty
+[submodule "eshell-prompt-extras"]
+	path = user-package/eshell-prompt-extras
+	url = https://github.com/zwild/eshell-prompt-extras
+	ignore = dirty
 [submodule "exec-path-from-shell"]
 	path = user-package/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell
