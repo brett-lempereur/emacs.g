@@ -24,7 +24,8 @@
                    (seq-filter
                     (lambda (buf)
                       (string-prefix-p "*eshell" (buffer-name buf)))
-                    (buffer-list)))))
+                    (buffer-list))
+                   #'string<)))
          (window (get-buffer-window buffer)))
     (cond
      ((and buffer window) (select-window window))
