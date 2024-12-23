@@ -20,5 +20,14 @@
   "Return the path to executable COMMAND or nil if it does not exist."
   (locate-file command exec-path exec-suffixes 1))
 
+(defun find-in-project (path)
+  "Return the absolute path to PATH in the current project, if it exists.
+
+Returns nil if no project is active."
+  (if (not (project-current)) nil
+    (let* ((project (project-root (project-current)))
+           (local-path (concat (file-name-as-directory project) path)))
+      (if (file-directory-p local-path) local-path nil))))
+
 (provide 'user-helpers)
 ;;; user-helpers.el ends here

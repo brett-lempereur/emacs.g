@@ -10,15 +10,13 @@
 (require 'python)
 
 (require 'user-development)
+(require 'user-helpers)
 (require 'user-hooks)
 
 (defun user-python-project-environment ()
   "Attempt to activate an environment for the current project."
-  (when (project-current)
-    (let* ((project (project-root (project-current)))
-           (local-path (concat (file-name-as-directory project) ".venv")))
-      (when (file-directory-p local-path)
-        (pyvenv-activate local-path)))))
+  (when-let ((venv-path (find-in-project ".venv")))
+    (pyvenv-activate venv-path)))
 
 (defun user-python-project-formatter ()
   "Attempt to activate an automatic formatting mode for the current project."

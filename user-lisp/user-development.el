@@ -82,7 +82,7 @@
 (use-package dape
   :commands dape
   :hook
-  ((dape-compile-hook . kill-buffer))
+  ((dape-compile . kill-buffer))
   :custom
   (dape-buffer-window-arrangement 'right)
   (dape-cwd-fn #'projectile-project-root)
@@ -173,7 +173,7 @@
   :after magit
   :demand t
   :hook
-  (magit-post-refresh-hook . diff-hl-magit-post-refresh)
+  (magit-post-refresh . diff-hl-magit-post-refresh)
   :config
   (global-diff-hl-mode))
 
