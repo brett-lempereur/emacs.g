@@ -25,8 +25,8 @@
   ;; Configuration
   (setq-local comment-auto-fill-only-comments t))
 
-(defun user-space-indentation-modes ()
-  "Activates minor modes common to all space-indented languages."
+(defun user-whitespace-significant-modes ()
+  "Activates minor modes common to all whitespace significant languages."
   ;; Minor modes
   (highlight-indentation-mode))
 

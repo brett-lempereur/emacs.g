@@ -14,14 +14,11 @@
 
 (defun user-python-project-environment ()
   "Attempt to activate an environment for the current project."
-  (condition-case error
-      (let* ((project (project-root (project-current)))
-             (local-path (concat (file-name-as-directory project) ".venv")))
-        (if (file-directory-p local-path)
-            (pyvenv-activate local-path)
-          (message "Could not active project environment, does not exist")))
-    (cl-no-applicable-method
-     (message "Could not active project environment, not in project"))))
+  (when (project-current)
+    (let* ((project (project-root (project-current)))
+           (local-path (concat (file-name-as-directory project) ".venv")))
+      (when (file-directory-p local-path)
+        (pyvenv-activate local-path)))))
 
 (defun user-python-project-formatter ()
   "Attempt to activate an automatic formatting mode for the current project."
@@ -34,7 +31,7 @@
 ;; Language hooks
 (add-hook 'python-mode-hook #'smartparens-mode)
 (add-hook 'python-mode-hook #'user-programming-minor-modes)
-(add-hook 'python-mode-hook #'user-space-indentation-modes)
+(add-hook 'python-mode-hook #'user-whitespace-significant-modes)
 (add-hook 'python-mode-hook #'user-lsp-minor-modes)
 
 ;; Environment hooks
