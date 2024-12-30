@@ -23,6 +23,7 @@
   (idle-highlight-mode)
   (rainbow-delimiters-mode)
   ;; Configuration
+  (setq-local fill-column 74)
   (setq-local comment-auto-fill-only-comments t))
 
 (defun user-whitespace-significant-modes ()
@@ -53,6 +54,7 @@
   (idle-highlight-mode)
   (rainbow-delimiters-mode)
   ;; Configuration
+  (setq-local fill-column 74)
   (setq-local comment-auto-fill-only-comments t))
 
 (defun user-markup-minor-modes ()
