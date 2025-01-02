@@ -53,6 +53,10 @@
 	path = user-package/consult-eglot
 	url = https://github.com/mohkale/consult-eglot
     ignore = dirty
+[submodule "consult-hoogle"]
+	path = user-package/consult-hoogle
+	url = https://codeberg.org/rahguzar/consult-hoogle
+	ignore = dirty
 [submodule "consult-xref-stack"]
 	path = user-package/consult-xref-stack
 	url = git@github.com:brett-lempereur/consult-xref-stack.git
