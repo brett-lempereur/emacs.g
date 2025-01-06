@@ -37,6 +37,9 @@
 (add-hook 'python-mode-hook #'user-python-project-formatter)
 (add-hook 'python-mode-hook #'pyvenv-mode)
 
+;; Insert colons automatically with parentheses
+(setopt sp-python-insert-colon-in-function-definitions t)
+
 ;; Virtual environment discovery
 (use-package pyvenv
   :commands (pyvenv-mode pyvenv-activate pyvenv-workon))

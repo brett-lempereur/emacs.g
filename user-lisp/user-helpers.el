@@ -7,6 +7,8 @@
 
 ;;; Code:
 
+(require 'project)
+
 (defun package-subdirectory (package &rest path)
   "Return the path to subdirectory at PATH in PACKAGE."
   (let ((package-path (file-name-directory (locate-library package))))
