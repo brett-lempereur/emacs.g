@@ -14,6 +14,8 @@
 
 (require 'use-package)
 
+(require 'user-settings)
+
 ;; Text encoding
 (set-language-environment "UTF-8")
 
@@ -116,6 +118,20 @@
   (("M-o" . ace-window))
   :custom
   (aw-scope 'frame))
+
+;; Large language model integration
+(use-package gptel
+  :when user-setting-claude-api-key
+  :bind
+  ("C-c c ." . gptel)
+  ("C-c c c" . gptel-menu)
+  ("C-c c f" . gptel-send-file)
+  ("C-c c g" . gptel-abort)
+  :custom
+  (gptel-model user-setting-claude-model)
+  :config
+  (let ((key (lambda () (getenv user-setting-claude-api-key))))
+    (setopt gptel-backend (gptel-make-anthropic "Claude" :stream t :key key))))
 
 (provide 'user-editing)
 ;;; user-editing.el ends here

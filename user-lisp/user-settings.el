@@ -42,6 +42,16 @@
   :group 'user-settings
   :type '(string))
 
+;; Editing customisations
+(defcustom user-setting-claude-api-key nil
+  "The API key for Claude."
+  :group 'user-settings
+  :type '(string))
+(defcustom user-setting-claude-model 'claude-3-5-sonnet-20241022
+  "The Claude model to use."
+  :group 'user-settings
+  :type '(symbol))
+
 ;; Operating system customisations
 (defcustom user-setting-shell-variables '()
   "The list of environment variables to load from the shell."
@@ -57,7 +67,7 @@
   :type '(string))
 
 ;; Project management customisations
-(defcustom user-setting-project-indexing-method 'hybrid
+(defcustom user-setting-project-indexing-method 'alien
   "The method to use when indexing project files."
   :group 'user-settings
   :type '(symbol))

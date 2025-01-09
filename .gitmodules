@@ -153,6 +153,10 @@
 	path = user-package/go-mode
 	url = https://github.com/dominikh/go-mode.el
 	ignore = dirty
+[submodule "gptel"]
+	path = user-package/gptel
+	url = https://github.com/karthink/gptel
+	ignore = dirty
 [submodule "haskell-mode"]
 	path = user-package/haskell-mode
 	url = https://github.com/haskell/haskell-mode

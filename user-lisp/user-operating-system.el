@@ -9,6 +9,7 @@
 
 (require 'use-package)
 
+(require 'user-helpers)
 (require 'user-settings)
 
 (defun user-open-shell ()
