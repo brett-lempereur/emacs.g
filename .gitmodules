@@ -33,6 +33,7 @@
 [submodule "cape"]
 	path = user-package/cape
 	url = https://github.com/minad/cape
+	ignore = dirty
 [submodule "cargo"]
 	path = user-package/cargo
 	url = https://github.com/kwrooijen/cargo.el

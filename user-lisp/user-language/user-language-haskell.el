@@ -19,9 +19,11 @@
   ("\\.hsig\\'" . haskell-mode)
   ("\\.[gh]s\\'" . haskell-mode)
   :hook
+  (haskell-mode . interactive-haskell-mode)
   (haskell-mode . smartparens-mode)
   (haskell-mode . user-programming-minor-modes)
   (haskell-mode . user-lsp-minor-modes)
+  (haskell-literate-mode . interactive-haskell-mode)
   (haskell-literate-mode . smartparens-mode)
   (haskell-literate-mode . user-programming-minor-modes)
   (haskell-literate-mode . user-lsp-minor-modes)
