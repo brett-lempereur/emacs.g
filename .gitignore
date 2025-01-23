@@ -4,7 +4,7 @@
 
 # Allowlist machine-specific configurations
 user-machine/*.el
-!user-machine/user-machine-saito.el
+!user-machine/user-machine-mahoro.el
 
 # Remote packages and temporary files
 /local
