@@ -37,6 +37,7 @@
 (require 'user-language-rust)
 (require 'user-language-shell-script)
 (require 'user-language-toml)
+(require 'user-language-web)
 (require 'user-language-yaml)
 
 (provide 'init)

@@ -16,7 +16,7 @@
   :mode "\\.go\\'"
   :bind
   (:map go-mode-map
-   ("C-c C-c C-c" . go-build))
+        ("C-c C-c C-c" . go-build))
   :hook
   ((go-mode . user-lsp-minor-modes)
    (go-mode . user-programming-minor-modes)

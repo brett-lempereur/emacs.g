@@ -14,6 +14,10 @@
 	path = user-package/aio
 	url = https://github.com/skeeto/emacs-aio
 	ignore = dirty
+[submodule "apheleia"]
+	path = user-package/apheleia
+	url = https://github.com/radian-software/apheleia
+	ignore = dirty
 [submodule "avy"]
     path = user-package/avy
     url = https://github.com/abo-abo/avy
@@ -341,6 +345,10 @@
     path = user-package/transient
     url = https://github.com/magit/transient
     ignore = dirty
+[submodule "treesit-auto"]
+	path = user-package/treesit-auto
+	url = https://github.com/renzmann/treesit-auto
+	ignore = dirty
 [submodule "tuareg"]
 	path = user-package/tuareg
 	url = https://github.com/ocaml/tuareg

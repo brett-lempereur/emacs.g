@@ -27,15 +27,15 @@
      (black (python-black-on-save-mode)))))
 
 ;; Language hooks
-(add-hook 'python-mode-hook #'smartparens-mode)
-(add-hook 'python-mode-hook #'user-programming-minor-modes)
-(add-hook 'python-mode-hook #'user-whitespace-significant-modes)
-(add-hook 'python-mode-hook #'user-lsp-minor-modes)
+(add-hook 'python-base-mode-hook #'smartparens-mode)
+(add-hook 'python-base-mode-hook #'user-programming-minor-modes)
+(add-hook 'python-base-mode-hook #'user-whitespace-significant-modes)
+(add-hook 'python-base-mode-hook #'user-lsp-minor-modes)
 
 ;; Environment hooks
-(add-hook 'python-mode-hook #'user-python-project-environment -10)
-(add-hook 'python-mode-hook #'user-python-project-formatter)
-(add-hook 'python-mode-hook #'pyvenv-mode)
+(add-hook 'python-base-mode-hook #'user-python-project-environment -10)
+(add-hook 'python-base-mode-hook #'user-python-project-formatter)
+(add-hook 'python-base-mode-hook #'pyvenv-mode)
 
 ;; Insert colons automatically with parentheses
 (setopt sp-python-insert-colon-in-function-definitions t)

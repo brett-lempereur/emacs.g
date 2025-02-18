@@ -66,6 +66,15 @@
 ;; Additional minor modes for compilation buffers
 (add-hook 'compilation-mode-hook #'winnow-mode)
 
+;; Automatically install treesitter grammars
+(use-package treesit-auto
+  :custom
+  (treesit-auto-install 'prompt)
+  (treesit-auto-langs '(python typescript html))
+  :config
+  (treesit-auto-add-to-auto-mode-alist 'all)
+  (global-treesit-auto-mode))
+
 ;; Language server support
 (use-package eglot
   :commands eglot
@@ -233,6 +242,10 @@ projectile-tags-command
   :commands idle-highlight-mode
   :custom
   (idle-highlight-idle-time 1))
+
+;; Reliable automatic formatting
+(use-package apheleia
+  :commands '(apheleia-mode apheleia-format-buffer))
 
 (provide 'user-development)
 ;;; user-development.el ends here
