@@ -70,7 +70,7 @@
 (use-package treesit-auto
   :custom
   (treesit-auto-install 'prompt)
-  (treesit-auto-langs '(python typescript html))
+  (treesit-auto-langs '(python typescript tsx html))
   :config
   (treesit-auto-add-to-auto-mode-alist 'all)
   (global-treesit-auto-mode))
@@ -245,7 +245,7 @@ projectile-tags-command
 
 ;; Reliable automatic formatting
 (use-package apheleia
-  :commands '(apheleia-mode apheleia-format-buffer))
+  :commands (apheleia-mode apheleia-format-buffer))
 
 (provide 'user-development)
 ;;; user-development.el ends here

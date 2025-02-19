@@ -90,6 +90,12 @@
   :group 'user-settings
   :type '(repeat string))
 
+;; Python customisations
+(defcustom user-setting-conda-environment-path nil
+  "The path to the conda environment store."
+  :group 'user-settings
+  :type '(string))
+
 ;; Common lisp customisations
 (defcustom user-setting-common-lisp-program nil
   "The name or path of the Common Lisp binary."

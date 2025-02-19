@@ -12,11 +12,14 @@
 (require 'user-development)
 (require 'user-helpers)
 (require 'user-hooks)
+(require 'user-settings)
 
 (defun user-python-project-environment ()
   "Attempt to activate an environment for the current project."
-  (when-let ((venv-path (find-in-project ".venv")))
-    (pyvenv-activate venv-path)))
+  (if (bound-and-true-p conda-project-env-path)
+      (conda-env-activate-for-buffer)
+    (when-let ((venv-path (find-in-project ".venv")))
+      (pyvenv-activate venv-path))))
 
 (defun user-python-project-formatter ()
   "Attempt to activate an automatic formatting mode for the current project."
@@ -27,6 +30,7 @@
      (black (python-black-on-save-mode)))))
 
 ;; Language hooks
+(add-hook 'python-base-mode-hook #'combobulate-mode)
 (add-hook 'python-base-mode-hook #'smartparens-mode)
 (add-hook 'python-base-mode-hook #'user-programming-minor-modes)
 (add-hook 'python-base-mode-hook #'user-whitespace-significant-modes)
@@ -43,6 +47,15 @@
 ;; Virtual environment discovery
 (use-package pyvenv
   :commands (pyvenv-mode pyvenv-activate pyvenv-workon))
+
+;; Conda managed virtual environments
+(use-package conda
+  :when user-setting-conda-environment-path
+  :custom
+  (conda-anaconda-home user-setting-conda-environment-path)
+  :config
+  (conda-env-initialize-interactive-shells)
+  (conda-env-autoactivate-mode t))
 
 ;; Automatic formatting
 (use-package python-black

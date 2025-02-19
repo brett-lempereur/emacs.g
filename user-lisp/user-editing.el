@@ -119,6 +119,14 @@
   :custom
   (aw-scope 'frame))
 
+;; Multiple cursor editing
+(use-package multiple-cursors)
+
+;; Structured editing
+(use-package combobulate
+  :custom
+  (combobulate-key-prefix "C-c o"))
+
 ;; Large language model integration
 (use-package gptel
   :when user-setting-claude-api-key

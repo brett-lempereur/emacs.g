@@ -46,10 +46,16 @@
     path = user-package/closql
     url = git@github.com:emacscollective/closql.git
     ignore = dirty
+[submodule "combobulate"]
+	path = user-package/combobulate
+	url = https://github.com/mickeynp/combobulate
 [submodule "compat"]
     path = user-package/compat
     url = git@github.com:emacs-compat/compat.git
     ignore = dirty
+[submodule "conda"]
+	path = user-package/conda
+	url = https://github.com/necaris/conda.el
 [submodule "consult"]
     path = user-package/consult
     url = https://github.com/minad/consult
@@ -237,6 +243,9 @@
 	path = user-package/merlin
 	url = https://github.com/emacsmirror/merlin
 	ignore = dirty
+[submodule "multiple-cursors"]
+	path = user-package/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el
 [submodule "no-littering"]
     path = user-package/no-littering
     url = https://github.com/emacscollective/no-littering
@@ -265,6 +274,9 @@
 	path = user-package/python-black
 	url = https://github.com/wbolster/emacs-python-black
     ignore = dirty
+[submodule "pythonic"]
+	path = user-package/pythonic
+	url = https://github.com/pythonic-emacs/pythonic
 [submodule "pyvenv"]
 	path = user-package/pyvenv
 	url = https://github.com/jorgenschaefer/pyvenv
