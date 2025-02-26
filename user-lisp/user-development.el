@@ -168,7 +168,8 @@
   (magit-prefer-push-default t)
   (magit-prefer-remote-upstream t)
   (magit-pull-or-fetch t)
-  (magit-repository-directories user-setting-project-paths)
+  (magit-repository-directories
+   (mapcar (lambda (p) (cons p 1)) user-setting-project-paths))
   (magit-save-repository-buffers 'dontask)
   (magit-submodule-remove-trash-gitdirs t)
   :config
@@ -200,8 +201,6 @@
   (advice-add 'projectile-locate-dominating-file
               :filter-return #'user-projectile-ignore-home)
   (projectile-mode))
-
-projectile-tags-command
 
 ;; Project search support
 (use-package ag
