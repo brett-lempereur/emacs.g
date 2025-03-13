@@ -22,7 +22,6 @@
   :custom
   (corfu-auto t)
   (corfu-cycle t)
-  (corfu-margin-formatters (list #'kind-icon-margin-formatter))
   (corfu-max-width 80)
   (corfu-preview-current t)
   (corfu-preselect 'prompt)

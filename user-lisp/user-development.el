@@ -8,6 +8,7 @@
 ;;; Code:
 
 (require 'compile)
+(require 'diff)
 (require 'eglot)
 (require 'etags)
 (require 'eldoc)
@@ -65,6 +66,16 @@
 
 ;; Additional minor modes for compilation buffers
 (add-hook 'compilation-mode-hook #'winnow-mode)
+
+;; Additional minor modes for diff buffers
+(add-hook 'diff-mode-hook #'corfu-mode)
+(add-hook 'diff-mode-hook #'display-line-numbers-mode)
+(add-hook 'diff-mode-hook #'eldoc-mode)
+(add-hook 'diff-mode-hook #'hl-line-mode)
+(add-hook 'diff-mode-hook #'hl-todo-mode)
+(add-hook 'diff-mode-hook #'hungry-delete-mode)
+(add-hook 'diff-mode-hook #'idle-highlight-mode)
+(add-hook 'diff-mode-hook #'rainbow-delimiters-mode)
 
 ;; Automatically install treesitter grammars
 (use-package treesit-auto
