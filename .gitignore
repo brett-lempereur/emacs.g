@@ -5,6 +5,7 @@
 # Allowlist machine-specific configurations
 user-machine/*.el
 !user-machine/user-machine-mahoro.el
+!user-machine/user-machine-togusa.el
 
 # Remote packages and temporary files
 /local
