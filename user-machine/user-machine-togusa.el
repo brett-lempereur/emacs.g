@@ -9,8 +9,9 @@
 (require 'user-settings)
 
 ;; Appearance customisations
-(setopt user-setting-font '(("Monaspace Krypton" . 14) ("Menlo" . 13)))
+(setopt user-setting-font '(("Monaspace Argon" . 14) ("Menlo" . 13)))
 (setopt user-setting-line-spacing 2)
+(setopt user-setting-menu-bar-mode -1)
 
 ;; Editing customisations
 (setopt user-setting-claude-api-key "ANTHROPIC_API_KEY")

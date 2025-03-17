@@ -108,6 +108,10 @@
 	path = user-package/dune
 	url = git@github.com:emacsmirror/dune.git
 	ignore = dirty
+[submodule "eat"]
+	path = user-package/eat
+	url = https://codeberg.org/akib/emacs-eat
+	ignore = dirty
 [submodule "edit-indirect"]
 	path = user-package/edit-indirect
 	url = https://github.com/Fanael/edit-indirect
@@ -136,10 +140,6 @@
     path = user-package/eros
     url = https://github.com/xiongtx/eros
     ignore = dirty
-[submodule "eshell-prompt-extras"]
-	path = user-package/eshell-prompt-extras
-	url = https://github.com/zwild/eshell-prompt-extras
-	ignore = dirty
 [submodule "exec-path-from-shell"]
 	path = user-package/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell
@@ -246,6 +246,7 @@
 [submodule "multiple-cursors"]
 	path = user-package/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el
+	ignore = dirty
 [submodule "no-littering"]
     path = user-package/no-littering
     url = https://github.com/emacscollective/no-littering
@@ -277,6 +278,7 @@
 [submodule "pythonic"]
 	path = user-package/pythonic
 	url = https://github.com/pythonic-emacs/pythonic
+	ignore = dirty
 [submodule "pyvenv"]
 	path = user-package/pyvenv
 	url = https://github.com/jorgenschaefer/pyvenv
