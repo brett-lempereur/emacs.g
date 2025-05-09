@@ -38,6 +38,7 @@
   :custom
   (eat-enable-mouse t)
   (eat-kill-buffer-on-exit t)
+  (eat-term-name "xterm-256color")
   :config
   (setopt
    eat-semi-char-non-bound-keys

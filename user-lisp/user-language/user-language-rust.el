@@ -17,16 +17,18 @@
   :mode "\\.rs\\'"
   :bind
   (:map rust-mode-map
-   ("C-c C-c C-c" . rust-compile)
-   ("C-c C-c C-l" . rust-run-clippy)
-   ("C-c C-c C-t" . rust-test))
+        ("C-c C-c C-c" . rust-compile)
+        ("C-c C-c C-l" . rust-run-clippy)
+        ("C-c C-c C-t" . rust-test))
   :hook
   ((rust-mode . cargo-minor-mode)
    (rust-mode . user-lsp-minor-modes)
    (rust-mode . user-programming-minor-modes))
   :custom
   (rust-format-on-save t)
-  (rust-indent-method-chain t))
+  (rust-indent-method-chain t)
+  (rust-format-show-buffer nil)
+  (rust-rustfmt-switches '("--edition" "2024" "--style-edition" "2024")))
 
 ;; Build system support
 (use-package cargo

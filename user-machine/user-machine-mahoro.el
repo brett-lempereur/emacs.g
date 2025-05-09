@@ -9,7 +9,7 @@
 (require 'user-settings)
 
 ;; Appearance customisations
-(setopt user-setting-font '(("Monaspace Argon" . 14) ("Menlo" . 13)))
+(setopt user-setting-font '(("Monaspace Neon" . 14) ("Menlo" . 13)))
 (setopt user-setting-line-spacing 2)
 
 ;; Editing customisations
