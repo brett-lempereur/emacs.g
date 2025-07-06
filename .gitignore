@@ -7,6 +7,7 @@ user-machine/*.el
 !user-machine/user-machine-mahoro.el
 !user-machine/user-machine-togusa.el
 !user-machine/user-machine-canti.el
+!user-machine/user-machine-tachikoma.el
 
 # Remote packages and temporary files
 /local
