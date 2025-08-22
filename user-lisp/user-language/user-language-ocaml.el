@@ -31,10 +31,12 @@
 (use-package dune
   :commands dune-mode
   :mode
-  ("\\.dune\\'" . dune-mode)
-  ("\\.dune-project\\'" . dune-mode)
-  ("\\.dune-workspace\\'" . dune-mode)
-  ("\\.dune\\.inc\\'" . dune-mode))
+  ("dune" . dune-mode)
+  ("dune-project" . dune-mode)
+  ("dune-workspace" . dune-mode)
+  ("dune.inc" . dune-mode)
+  :hook
+  ((dune-mode . user-programming-minor-modes)))
 
 ;; Interactive environment
 (use-package utop

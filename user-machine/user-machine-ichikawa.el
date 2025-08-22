@@ -9,7 +9,7 @@
 (require 'user-settings)
 
 ;; Appearance customisations
-(setopt user-setting-font '(("Fira Code" . 13) ("Menlo" . 13)))
+(setopt user-setting-font '(("Fira Code" . 14) ("Menlo" . 14)))
 (setopt user-setting-line-spacing 2)
 (setopt user-setting-menu-bar-mode -1)
 

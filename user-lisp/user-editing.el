@@ -51,6 +51,9 @@
 (auto-save-mode -1)
 (auto-save-visited-mode t)
 
+;; Fullscreen
+(global-set-key (kbd "C-c w") #'toggle-frame-fullscreen)
+
 ;; Refresh buffers
 (setopt auto-revert-interval 1)
 (global-auto-revert-mode)
